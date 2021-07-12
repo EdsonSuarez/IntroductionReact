@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./challenges.css" />
+    <title>primer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      function Menu(props) {
+        return (
+          <article>
+            <header>
+              <h1>Simple JSX</h1>
+            </header>
+            <div>
+              <h2>Complex JSX</h2>
+              <p>aqui un complex JSX</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                doloribus explicabo impedit aperiam porro. Aut vitae facere rem
+                assumenda tempora perspiciatis quaerat repellendus? Ipsa
+                incidunt repudiandae consequuntur, fuga nulla obcaecati!
+              </p>
+            </div>
+            <div>
+              <div>
+                <h1>This is a block of JSX</h1>
+                <p>Here's a subtitle</p>
+                {/* Comentario*/}
+              </div>
+            </div>
+            <div>
+              <div>
+                <h1>Hello World</h1>
+                <p>Lets render this to the DOM</p>
+              </div>
+            </div>
+            <div>
+              <div className="addClass">
+                <h1>Add a class to this div</h1>
+              </div>
+            </div>
+            <div>
+              <h2>Welcome to React!</h2> <br />
+              <p>Be sure to close all tags!</p>
+              <hr />
+            </div>
+            <div>
+                <div>agregar text a div</div>    
+            </div>
+          </article>
+        );
+      }
+      ReactDOM.render(<Menu />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
